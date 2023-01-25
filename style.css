@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css? family-Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.home-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    overflow: hidden;
+}
+
+.content {
+    color: #0f0a01;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+img {
+    max-height: 100%;
+    max-width: 50%;
+    display: block;
+    margin-right: auto;
+    border-radius: 5em;
+    border-color: #000729;
+}
+
+.navbar {
+    width: 85%;
+    height: 19%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    color: #f7f3f3;
+    padding: 10px 20px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 49% 51% 52% 48% / 63% 59% 40% 34%;
+    background: #6ac545;
+    box-shadow: inset 10px 10px 10px  rgba(1,180,254,0.05), 
+    15px 35px 10px rgba(1,180,254,0.1), 
+    15px 20px 20px rgba(1,190,254,0.1), 
+    inset -10px -10px 15px rgba(255,255,255,0.9);
+}
+
+
+.login-container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    position: relative;
+    left: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .drop{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    box-shadow: inset 20px 20px 20px  rgba(0,0,0,0.05), 25px 35px 20px rgba(0,0,0,0.05), 25px 30px 30px rgba(0,0,0,0.05), inset -20px -20px 25px rgba(255,255,255,0.9);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 52% 48% 33% 67% / 38% 45% 55% 62%;
+
+}
+.container .drop:hover {
+    border-radius: 50%;
+
+}
+
+.container .drop::before{
+    content: '';
+    top: 50px;
+    left: 85px;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.9;
+}
+
+.container .drop::after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 110px;
+    width: 15px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.9;
+}
+.container .drop .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+
+.container .drop .content h2 {
+    position: relative;
+    color: #16d8a7;
+    font-size: 1.5em;
+}
+
+.container .drop .content form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+    justify-content: center;
+    align-items: center;
+}
+
+.container .drop .content form .inputBox {
+    position: relative;
+    width: 225px;
+    box-shadow: inset 2px 5px 10px  rgba(0,0,0,0.1),
+    inset -2px -5px 10px rgba(255,255,255,1),
+    15px 15px 10px rgba(0,0,0,0.05), 
+    15px 10px 15px rgba(0,0,0,0.025);
+    border-radius: 25px;
+}
+
+.container .drop .content form .inputBox::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    height: 5px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 5px;
+}
+
+
+.container .drop .content form .inputBox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;   
+    padding: 10px 15px;
+}
+
+.container .drop .content form .inputBox  input[type="submit"] {
+    color: #f0f8ff;
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+    letter-spacing: .1em;
+    font-weight: 500;
+}
+
+.container .drop .content form .inputBox:Last-child {
+    width: 120px;
+    background: #07fa75;
+    box-shadow: inset 2px 5px 10px  rgba(0,0,0,0.1),
+    15px 15px 10px rgba(0,0,0,0.05), 
+    15px 10px 15px rgba(0,0,0,0.025);
+    transition: 0.5s;
+}
+
+.container .drop .content form .inputBox:Last-child:hover
+{
+    width: 150px;
+
+}
+
+.btns {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+    background: #c61dff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    transition: 0.25;
+    text-align: center;
+    box-shadow: inset 10px 10px 10px  rgba(190,1,254,0.05), 
+    15px 35px 10px rgba(190,1,254,0.1), 
+    15px 20px 20px rgba(190,1,254,0.1), 
+    inset -10px -10px 15px rgba(255,255,255,0.9);
+    border-radius: 44% 56% 65% 35% / 57% 58% 42% 51%;
+
+}
+
+
+
+.btns ::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.4s;
+
+}
+
+.btns.signup {
+    bottom: 150px;
+    right: 90px;
+    width: 80px;
+    height: 80px;
+    border-radius: 49% 51% 52% 48% / 63% 59% 40% 34%;
+    background: #01b4ff;
+    box-shadow: inset 10px 10px 10px  rgba(1,180,254,0.05), 
+    15px 35px 10px rgba(1,180,254,0.1), 
+    15px 20px 20px rgba(1,190,254,0.1), 
+    inset -10px -10px 15px rgba(255,255,255,0.9);
+}
+
+.btns.login {
+    bottom: 200px;
+    right: 90px;
+    width: 80px;
+    height: 70px;
+    border-radius: 49% 51% 52% 48% / 63% 59% 40% 34%;
+    background: #fa8601;
+    box-shadow: inset 10px 10px 10px  rgba(3, 248, 146, 0.05), 
+    15px 35px 10px rgba(101, 60, 212, 0.836), 
+    15px 20px 20px rgba(1,190,254,0.1), 
+    inset -10px -10px 15px rgba(255,255,255,0.9);
+}
+
+
+
+.btns.signup::before {
+    left: 20px;
+    width: 15px;
+    height: 15px;
+
+}
+
+.btns:hover {
+    border-radius: 50%;
+}
+
+.homelink {
+    justify-content: bottom;
+    align-items: bottom;
+    color: rgba(66, 10, 10, 0.5);
+    letter-spacing: 0.2em;
+    font-size: 1.85em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+
+.side-bar {
+    widows: 50px;
+    height: 100vh;
+    background: linear-gradient(#00545d, #000729);
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+
+.menu {
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
